@@ -51,7 +51,7 @@ public class AuthUserServiceImpl implements AuthUserService {
             return null;
         }
         String Username = jwtProvider.getUserNameFromToken(token);
-        if (!authRepository.findByUserName(username).isPresent()) {
+        if (!authRepository.findByUserName(Username).isPresent()) {
             return null;
         }
         return new TokenDto(token);
