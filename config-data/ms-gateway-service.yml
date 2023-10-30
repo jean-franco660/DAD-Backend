@@ -29,3 +29,5 @@ spring:
           uri: lb://ms-proveedor-service
           predicates:
             - Path=/proveedor/**
+          filters:
+            - AuthFilter
