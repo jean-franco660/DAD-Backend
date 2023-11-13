@@ -26,6 +26,7 @@ public class AlmacenServiceImpl implements AlmacenService {
 
     @Autowired
     private ProveedorFeign proveedorFeign;
+
     @Override
     public List<Almacen> listar() {
         return almacenRepository.findAll();

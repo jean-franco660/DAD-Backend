@@ -4,6 +4,8 @@ import com.example.msinventario.dto.Proveedor;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.Date;
 import java.util.List;
 
 
@@ -19,9 +21,15 @@ public class Almacen {
 
     private String descripcion;
 
-    private String codigo;
+    private Double stock;
+    
+    private String Talla;
 
     private Integer proveedorId;
+
+    public Almacen(){
+        this.stock = (double) 0;
+    }
 
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

@@ -5,6 +5,8 @@ import com.example.msinventario.dto.Producto;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.Date;
+
 @Entity
 @Data
 public class AlmacenDetalle {
@@ -15,9 +17,15 @@ public class AlmacenDetalle {
 
     private String categoria;
 
-    private Double stock;
-
     private Double precio;
+
+    private String estadoProducto;
+
+    private String Talla;
+
+    private Date FechaRecibido;
+
+    private Date FechaVencimiento;
 
     private Integer produtoId;
 
@@ -25,7 +33,6 @@ public class AlmacenDetalle {
     private Producto producto;
 
     public AlmacenDetalle(){
-        this.stock = (double) 0;
         this.precio = (double) 0;
     }
 
