@@ -1,10 +1,8 @@
 package com.example.mscatalogo.Service.Impl;
 
 import com.example.mscatalogo.Entity.Categoria;
-import com.example.mscatalogo.Entity.Producto;
 import com.example.mscatalogo.Repository.CategoriaRepository;
 import com.example.mscatalogo.Service.CategoriaService;
-import com.example.mscatalogo.Service.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +13,7 @@ import java.util.Optional;
 public class CategoriaServiceImpl implements CategoriaService {
     @Autowired
     private CategoriaRepository categoriaRepository;
+
 
     @Override
     public List<Categoria> listar() {

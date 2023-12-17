@@ -1,4 +1,5 @@
-package com.example.msauth.Security;
+package com.example.msauth.security;
+
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

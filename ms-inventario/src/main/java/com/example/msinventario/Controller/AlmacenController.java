@@ -41,7 +41,8 @@ public class AlmacenController {
         almacenService.eliminarPorId(id);
         return ResponseEntity.ok(almacenService.listar());
     }
-    private ResponseEntity<Almacen> fallBackAlmacenListarPorIdCB(@PathVariable(required = true) Integer id, RuntimeException e) {
+    private ResponseEntity<Almacen> fallBackAlmacenListarPorIdCB
+    (@PathVariable(required = true) Integer id, RuntimeException e) {
         Almacen almacen = new Almacen();
         almacen.setId(90000);
         Proveedor proveedor = new Proveedor();

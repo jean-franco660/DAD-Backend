@@ -1,7 +1,9 @@
-package com.example.msauth.Controller;
-import com.example.msauth.Entity.AuthUser;
-import com.example.msauth.Entity.TokenDto;
+package com.example.msauth.controller;
+
 import com.example.msauth.dto.AuthUserDto;
+import com.example.msauth.entity.AuthUser;
+import com.example.msauth.entity.TokenDto;
+
 import com.example.msauth.service.AuthUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
